@@ -14,6 +14,16 @@ mongoose.connect('mongo "mongodb+srv://cluster0.zl5bd.mongodb.net/<dbname>" --us
     }
 })
 
+
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://cron:<password>@cluster0.zl5bd.mongodb.net/<dbname>?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//   const collection = client.db("test").collection("devices");
+//   // perform actions on the collection object
+//   client.close();
+// });
+
 // const url ="mongodb://localhost:27017/Time";
 
 app.get('/',(req,res)=>{
