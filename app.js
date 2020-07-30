@@ -5,7 +5,7 @@ const User = require('./model/User');
 const { response } = require('express');
 const  MongoClient = require('mongodb').MongoClient;
 
-mongoose.connect('mongodb://localhost:27017/Time',{useNewUrlParser:true},(err)=>{
+mongoose.connect('mongo "mongodb+srv://cluster0.zl5bd.mongodb.net/<dbname>" --username cron',{useNewUrlParser:true},(err)=>{
     if(!err){
         console.log('MongoDB Connected..')
     }
